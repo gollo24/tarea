@@ -36,7 +36,7 @@ then
     echo address 192.168.100.60/24 >> /etc/network/interfaces
     echo gateway 192.168.100.1 >> /etc/network/interfaces
     echo dns-nameservers 8.8.8.8 1.1.1.1 >> /etc/network/interfaces
-elif [ $i -eq 3]
+elif [ $i -eq 3 ]
 then
     #Estos comandos eliminan el contenido anterior y lo sustituyen por para habilitar ip estatico en casa
     echo source /etc/network/interfaces.d/* > /etc/network/interfaces
