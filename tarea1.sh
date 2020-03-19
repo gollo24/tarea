@@ -3,7 +3,7 @@
 #Esta condicional verifica que seas usuario root
 if ! [ $(id -u) = 0 ];
 then
-    echo "Debes ser usuario root para correr estte script"
+    echo "Debes ser usuario root para correr este script"
     exit 1
 else
     #Esta linea solo es para crear una copia por cualquier cosa del archivo a modificar
