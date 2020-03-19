@@ -50,7 +50,6 @@ then
     echo address 192.168.100.60/24 >> /etc/network/interfaces
     echo gateway 192.168.100.1 >> /etc/network/interfaces
     echo dns-nameservers 8.8.8.8 1.1.1.1 >> /etc/network/interfaces
-    echo "Thanks for entering # 3"
 else
     echo "Esa no era una opcion, intenta de nuevo"
 fi
