@@ -38,6 +38,18 @@ then
     echo dns-nameservers 8.8.8.8 1.1.1.1 >> /etc/network/interfaces
 elif [ $i -eq 3]
 then
+    #Estos comandos eliminan el contenido anterior y lo sustituyen por para habilitar ip estatico en casa
+    echo source /etc/network/interfaces.d/* > /etc/network/interfaces
+    echo  >> /etc/network/interfaces
+    echo auto lo enp0s3 >> /etc/network/interfaces
+    echo allow-hotplug enp0s3 >> /etc/network/interfaces
+    echo  >> /etc/network/interfaces
+    echo iface lo inet loopback >> /etc/network/interfaces
+    echo  >> /etc/network/interfaces
+    echo iface enp0s3 inet static >> /etc/network/interfaces
+    echo address 192.168.100.60/24 >> /etc/network/interfaces
+    echo gateway 192.168.100.1 >> /etc/network/interfaces
+    echo dns-nameservers 8.8.8.8 1.1.1.1 >> /etc/network/interfaces
     echo "Thanks for entering # 3"
 else
     echo "Esa no era una opcion, intenta de nuevo"
